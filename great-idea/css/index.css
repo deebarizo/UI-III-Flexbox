@@ -172,13 +172,14 @@ nav ul {
   width: 600px;
 }
 
-nav ul li {
+nav ul li a {
   display: flex;
   align-items: center;
   color: #cecece;
   font-weight: bold;
   font-size: 15px;
   margin-right: 60px;
+  text-decoration: none;
 }
 
 nav ul li:last-child {
