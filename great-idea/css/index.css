@@ -164,39 +164,114 @@ header {
 
 nav {
   display: flex;
-  margin: 35px 0 75px 0;
+  margin: 35px 0 0 0;
 }
 
-nav ul {
+nav div.text-links {
   display: flex;
-  width: 600px;
-}
-
-nav ul li {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  font-weight: bold;
-  font-size: 15px;
+  width: 600px;
   margin-right: 60px;
 }
 
-nav ul li a {
+nav a {
+  font-weight: bold;
+  font-size: 15px;
   color: #cecece;
   text-decoration: none;
 }
 
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav div.img {
+nav img {
   display: flex;
+  align-items: center;
   width: 192px;
   margin-left: 80px;
 }
 
+img.services-header-img {
+  margin: 20px 0 0 0;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+section div {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+section.services-description {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 30px 0;
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid black;
+}
+
+section.services-description h2 {
+  font-size: 28px;
+}
+
+section.services-description p {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+section.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+section.services-list div {
+  width: 418px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 0 0 40px 0;
+  background: #f4f3f4;
+}
+
+section.services-list div button {
+  background: white;
+  margin: 15px 0 0 0;
+  padding: 10px;
+  width: 140px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+section.services-facts {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+
+section.services-facts div.text {
+  font-size: 16px;
+  line-height: 1.3;
+  width: 50%;
+}
+
+section.services-facts div.text p {
+  margin-bottom: 20px;
+}
+
+section.services-facts div.text ul {
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+section.services-facts div.text li {
+  margin: 10px 0;
+}
+
 section.hero {
   display: flex;
+  margin-top: 75px;
 }
 
 div.hero-headline {
@@ -226,16 +301,6 @@ div.hero-image {
 
 div.hero-image img {
   margin-left: 48px;
-}
-
-section {
-  width: 100%;
-  margin: 0 auto;
-}
-
-section div {
-  font-size: 16px;
-  line-height: 1.2;
 }
 
 section.first-content {
@@ -272,22 +337,26 @@ section.second-content div {
 footer {
   width: 100%;
   margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 div.contact {
   margin-top: 50px;
-  margin-bottom: 50px;
   border-top: 1px solid black;
   padding-top: 40px;
-  font-size: 16px;
-  line-height: 1.2;
 }
 
 div.contact p {
   margin: 15px 0;
 }
 
-div.contact div.copyright {
+div.copyright {
   margin-top: 30px;
   text-align: center;
+}
+
+div.copyright.services-page {
+  margin-top: 70px;
 }
